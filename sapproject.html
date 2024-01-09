@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best food dilivery in pune</title>
+</head>
+<style>
+ /* CSS Reset */
+ *{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    align-items: center;
+    font-size: 55px;
+    color:rgb(33, 12, 42); 
+}
+#home::before{
+
+content: "";
+    background: url(image/bg1.jpg)no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 70%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+.para{
+    font-size: 30px;
+    color: honeydew;
+    
+  
+}
+.dd{
+    font-size: 20px;
+    border-radius: 10px;
+    color:rgb(210, 207, 162);
+    
+    background-color: black;
+    
+}
+.our{
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    font-size: 45px;
+    
+    
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}    
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('image/bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.7;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url('image/psp.jpg.webp') no-repeat center center/cover;
+    padding-top: 50px;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px; 
+}
+
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+</style>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="image/logo.jpg" alt="MyOnlineMeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="title">Welcome to my online meal</h1>
+        <p class="para">"My Online Meal" isn't just a meal service; it's your culinary companion. We promise you a seamless, delicious, and hassle-free dining experience, wherever you are. Join us in embracing the flavors of the world, 
+            one delectable bite at a time.We partner with the finest local restaurants, ensuring that every dish is crafted with care and only the freshest ingredients. Our commitment to quality is unwavering.</p>
+        <button class="dd">order now</button>
+        <h1 class="our">Our Services</h1>
+    </section>
+    <section class="Services-container">
+        <div id="services">
+            <div class="box">
+                <img src="image/1.png" alt="">
+                <h2 class="h-secondry center">Food Customising</h2>
+                <p class="center">Explore restaurants that deliver to your doorstep, Browse menus and build your order in seconds and Follow
+                     the status of your order with real-time alerts</p>
+
+            </div>
+            <div class="box">
+                <img src="image/2.png" alt="">
+                <h2 class="h-secondry center">Food Ordering</h2>
+                <p class="center">Whether you’re looking for biryani to feed your desi cravings, soul comforting pizzas and burgers, or even
+                     a salad with a cup of chai or coffee</p>
+
+            </div>
+            <div class="box">
+                <img src="image/3.png" alt="">
+                <h2 class="h-secondry center">Food Delivery</h2>
+                <p class="center">Myonlinemeals is the only website you need for the quickest doorstep delivery of your favourites. With over 1.5 million restaurants and 285 million ratings and reviews, 
+                    discover the best around you in no time</p>
+
+            </div>
+
+        </div>
+    </section>
+        <section id="client-section">
+            <h1 class="h-primary center">Our Clients</h1>
+            <div id="clients">
+                <div class="client-item">
+                    <img src="image/logo1.png" alt="Our Client">
+                </div>
+                <div class="client-item">
+                    <img src="image/logo2.png" alt="Our Client">
+                </div>
+              
+                <div class="client-item">
+                    <img src="image/logo4.png" alt="Our Client">
+                </div>
+                <div class="client-item">
+                    <img src="image/logo3.png" alt="Our Client">
+                </div>
+            </div>
+    
+        </section>
+    
+    
+        <section id="contact">
+            <h1 class="h-primary center">Contact Us</h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="email" name="name" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number: </label>
+                        <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <script>
+            console.log("hello world");
+        </script>
+    
+    
+</body>
+</html>
